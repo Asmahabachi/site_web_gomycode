@@ -3,6 +3,7 @@ import img3 from '../img/img3.jpg'
 import img7 from '../img/img7.jpg'
 import img9 from '../img/img9.jpg'
 import {Carousel} from 'react-bootstrap'
+import BlocImage from '../BlocImage'
 
 function TopSection() {
   return (
@@ -47,6 +48,8 @@ function TopSection() {
 </Carousel>
 </div>
 
+<BlocImage/>
+
 
 <div class="blockentreimages">
 <section class="story-1">
@@ -73,31 +76,7 @@ function TopSection() {
 
 
 
-    <div class="cards-list">
-  
-
-
-
-
-
-<div class="card 1">
-  <div class="card_image"> <img src={img3} /> </div>
-  
-</div>
-
-  <div class="card 2">
-  <div class="card_image">
-    <img src={img7} /> 
-    </div>
-  
-</div>
-
-<div class="card 3">
-  <div class="card_image">
-  <img src={img9} /> 
-  </div>
-</div>
-</div>
+    
 
 <div id="bloc-1" className="section-1">  
     <div className="col1">

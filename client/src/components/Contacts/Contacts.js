@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import Mobile from './Mobile'
+// import Mobile from './Mobile'
 import {Form} from "react-bootstrap"
 import {singnUp} from '../../redux/actions/actions'
 import {useDispatch} from 'react-redux'
@@ -24,16 +24,12 @@ function Contacts() {
 }
 
 
-// useEffect(() => {
-//   return() => {
-//    alert(123)
-//   }
-// }, [email])
-
   return (
     <div> 
-        <Mobile/>
-        <Form>
+        {/* <Mobile/> */}
+        
+        <Form className='signup'>
+
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Nom</Form.Label>
           <Form.Control type="text" placeholder="Enter Nom" onChange={(e)=> setNom(e.target.value)}/>
@@ -66,7 +62,7 @@ function Contacts() {
           <Form.Label>Ville</Form.Label>
           <Form.Control type="text" placeholder="Ville" onChange={(e)=> setVille(e.target.value)}/>
         </Form.Group>
-        <Link style={{textDecoration: 'none'}} to={'/Enregistrer'} > <Form.Control onClick={()=> Submit()} type="text" className="btn btn-primary" defaultValue="Submit" /></Link>
+        <Link style={{textDecoration: 'none'}} to={'/SingIN'} > <Form.Control onClick={()=> Submit()} type="text" className="btn btn-primary" defaultValue="Submit" /></Link>
       
         
       </Form>

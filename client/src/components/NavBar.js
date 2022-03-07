@@ -32,8 +32,18 @@ function NavBar() {
       </NavDropdown>
            <Nav.Link as={Link} to='/Forfaits' >Forfaits</Nav.Link>
            <Nav.Link as={Link} to='/Réalisations'>Réalisations</Nav.Link>
+           <Nav.Link as={Link} to='/Cours de Coaching'>Cours de Coaching</Nav.Link>
            <Nav.Link as={Link} to='/Devis'>Devis</Nav.Link>
-           <Nav.Link as={Link} to='/Contacts' >Contacts</Nav.Link>
+           {/* <Nav.Link as={Link} to='/Contacts' >Contacts</Nav.Link> */}
+
+           <NavDropdown title={`SingIN/SignUP`} id="collasible-nav-dropdown">
+          <NavDropdown.Item as={Link} to='/SingIN' >SingIN</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to='/SignUP' >SignUP</NavDropdown.Item>
+          
+          
+        {/* <NavDropdown.Divider /> */}
+        {/* <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item> */}
+      </NavDropdown>
            </Nav> 
     </Nav>
   </Navbar.Collapse>
