@@ -4,6 +4,7 @@ import img22 from '../img/img22.jpg'
 import img14 from '../img/img14.jpg'
 import MiddleSection from './MiddleSection'
 import {Carousel} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 
 
 function TopSection() {
@@ -114,7 +115,7 @@ function TopSection() {
             </div>
 
             <div class="col-paragh">
-            <p>Votre nid douillet est alors à votre disposition ! N'hésitez plus <a href="contact.php">contactez-nous</a>.</p>
+            <p>Votre nid douillet est alors à votre disposition ! N'hésitez plus <Link to="/Contact">contactez-nous</Link>.</p>
             </div>
 
 

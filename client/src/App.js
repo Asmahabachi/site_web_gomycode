@@ -13,6 +13,7 @@ import { BrowserRouter,Switch, Route } from 'react-router-dom';
 import Enregistrer from './components/Contacts/Enregistrer'
 import Agencements from './components/Prestation/Agencements'
 import Decorations from './components/Prestation/Decorations'
+import ContactPage from './components/ContactPage'
 
 
 function App() {
@@ -32,7 +33,9 @@ function App() {
       <Route  path="/SignUP" component={Contacts} />
       <Route  path="/SingIN" component={Enregistrer} />
       <Route  path="/Agencement & de locaux professionnels" component={Agencements} />
-      <Route  path="/Décorattion & aménagement pour particulier" component={Decorations} />
+      <Route  path="/Décorattion & aménagement pour particulier" component={Decorations} />      
+      <Route  path="/Contact" component={ContactPage} />  
+
      </Switch>
      </BrowserRouter> 
       

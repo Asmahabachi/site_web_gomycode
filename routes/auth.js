@@ -12,7 +12,9 @@ const {addDevis,afficheDevis} = require('../controllers/devis.controllers')
 
 auth.post('/signUp',validationSignUp,isValid ,authSignUp )
 auth.post('/signin',validationSignIn, isValid,authSignIn)
-auth.get('/current', isAuth, (req,res) =>{res.send(req.user)});
+auth.get('/current', isAuth, (req,res) =>{
+    res.send(req.user)
+});
 auth.post('/addNewCours', addNewCours)
 auth.get('/afficheCours', afficheCours)
 auth.delete('/cours/:ID', deleteCours)

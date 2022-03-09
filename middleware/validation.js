@@ -27,6 +27,6 @@ exports.isValid = async (req, res, next) => {
         }
         next();
       } catch (error) {
-          res.status(400).send({msg: error})
+          return res.status(500).send({msg: error})
       }
 }

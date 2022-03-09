@@ -7,10 +7,10 @@ exports.addDevis = async (req, res) => {
     
 
         try {
-            const addDevis = new devisSchema(req.body)
-            await addDevis.save();
-            res.status(200).send({msg: ' person who choose an offer added successfully'})
-            } catch (error) {  res.status(400).send({msg:"could not SAVE"})
+            const addDevis = new devisShcema(req.body)
+            await addDevis.save()
+            return res.status(200).send({msg: ' person who choose an offer added successfully'})
+            } catch (error) {  return res.status(500).send({msg:"could not SAVE"})
         }
             }
  
@@ -18,9 +18,9 @@ exports.addDevis = async (req, res) => {
 
 exports.afficheDevis =  async (req,res)=>{
     try {
-       const Persons =  await devisSchema.find();
-        res.status(200).send({msg:"list",Persons});
+       const Persons =  await devisShcema.find();
+        return res.status(200).send({msg:"list",Persons});
     } catch (error) {
-        res.status(500).send({msg:"could not list"})
+        return res.status(500).send({msg:"could not list"})
     }
 }

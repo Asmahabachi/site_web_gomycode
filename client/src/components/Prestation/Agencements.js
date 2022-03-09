@@ -16,14 +16,26 @@ function Agencements() {
     <div class="textetimage">
         <div class="flex-row m-align-items-stretch">
             <div>
-                <h2>Nos architectes d’intérieur à Nanterre aménagent vos espaces</h2>
-<p>Afin de mettre en valeur votre maison, votre intérieur doit être décoré à vos goûts. <strong>Nos architectes d'intérieur</strong> imaginent pour vous des aménagements modernes, qui permettent d’harmoniser l’ensemble de votre habitation. Nous vous proposons une étude de projet personnalisée pour satisfaire tous vos besoins.</p>
-<p>Pour vos travaux d’agencement intérieur à <strong>Nanterre</strong> et ses environs, vous pouvez solliciter les services de notre cabinet d’architecture intérieure <strong>INSPYRAYA</strong>. Depuis 2018, nous nous mettons à la disposition des particuliers pour la réalisation de leur <strong>décoration</strong>.</p>
-<p>Et pour vous aider à mieux vous projeter, nous concevons un plan 3D détaillé. Par ailleurs, vous pouvez contacter notre cabinet pour bénéficier d’un des services de nos <a href="https://www.inspyraya.com/visite-avant-achat.php">architectes d'intérieur en visite avant l’achat du bien immobilier à Nanterre</a>. Faites appel à nos <strong>architectes d’intérieur</strong> pour moderniser votre maison à <strong>Rueil-Malmaison, Suresnes</strong> et leurs environs.</p>            
+            <h1>Agencement de locaux professionnels<span> sur Sousse, Tunis ...</span></h1>
+            <br/>
+            <p class="intro">LeylaNjim, notre cabinet d’architecture à SOUSSE,
+             met son savoir-faire à votre profit pour l’agencement de vos locaux professionnels.
+             Nous exerçons à <strong>Sousse, Tunis</strong> et <strong>nous nous déplaçons dans toute la Tunis</strong>.</p>
+                <h2>Pourquoi aménager un local professionnel ?</h2>
+        <p><strong>L’agencement d’un local professionnel</strong> présente plusieurs intérêts.
+         Cette opération valorise en effet l’image de marque de votre entreprise.
+         Toutes les activités peuvent tirer avantage de cette intervention, qu’il s’agisse d’un bureau, d’un showroom, d’un restaurant, d’un magasin, etc.</p>
+        <p>Par ailleurs, bien <strong>agencer votre local</strong> permet à vos salariés de se sentir à l’aise.
+         Ceci participe à leur bien-être et réduit les absentéismes. Il s’agit ainsi d’un vecteur de productivité
+            indispensable pour l’équilibre et le succès de votre société. 
+            En fonction de votre secteur d’activité, une décoration appropriée et agréable permet également d’attirer plus de clients.</p>
+        <p>Pour mener à bien vos travaux d’aménagement à <strong>Sousse, TUNIS</strong> 
+        et les alentours, faites appel à <strong>LeylaNjim</strong>. 
+        Notre cabinet intervient dans toute <strong>Sousse</strong>.</p>         
 </div>
             <div class="col-imgs12 m6" >
                 <div class="image-wrapper m-fit-content">
-                    <img src="https://www.inspyraya.com/photos/579x386/adobestock_184405072.jpeg" width="960" height="640" alt="déco salon" class="responsive-img" style={{width:'600px', height:'400px'}}/>
+                    <img src="https://www.inspyraya.com/photos/579x386/adobestock_184405072.jpeg" width="660" height="660" alt="déco salon" class="responsive-img" style={{width:'600px', height:'400px'}}/>
                 </div>
             </div>
         </div>

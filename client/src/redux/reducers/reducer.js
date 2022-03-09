@@ -63,6 +63,9 @@ const UserReducer =(state=initialState,action )=> {
             ...state,
             deleteCours: action.payload
         }
+        
+
+        
         default:return state
     }
 }

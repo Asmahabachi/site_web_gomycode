@@ -1,11 +1,12 @@
-const jwt = require('jsonwebtoken');
-const contactsSchema = require('../models/contact.model')
 
+const contactsSchema = require('../models/contact.model')
+const jwt = require('jsonwebtoken');
 
 
 exports.isAuth = async (req, res,next) => {
-    
+    console.log(req)
     const token = req.header('authorization');
+    
      try {
          if(!token) {
              return res.status(400).send({msg:'not autorized'})
@@ -18,7 +19,7 @@ exports.isAuth = async (req, res,next) => {
            req.user = user;
            next(); 
      } catch (error) {
-         res.status(500).send({msg: error})
+         return res.status(500).send({msg: error})
      } 
 }
 

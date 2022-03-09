@@ -11,7 +11,7 @@ const devisSchema = new mongoose.Schema(
     password : {type:String, required:true},
     telephone :{type:Number},
     adress : {type:String, required:true},
-    motif: {type:String}, 
+    motif: {type:String, required:true}, 
     Superficie :{type:Number},  
 }
 );

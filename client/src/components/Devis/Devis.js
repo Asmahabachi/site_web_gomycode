@@ -24,6 +24,10 @@ function Devis() {
  
    return (
      <div> 
+
+
+
+       
         
          <Form className="signup">
          <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -52,8 +56,14 @@ function Devis() {
            <Form.Control type="text" placeholder="postal" onChange={(e)=> setSuperficie(e.target.value)}/>
          </Form.Group>
          <Form.Group className="mb-3" controlId="formBasicVille">
-           <Form.Label>Motif</Form.Label>
-           <Form.Control type="text" placeholder="DEVIS, OFFRE, Cour" onChange={(e)=> setMotif(e.target.value)}/>
+
+         <Form.Select onChange={(e)=> setMotif(e.target.value)} aria-label="Default select example">
+  <option>Motif</option>
+  <option value={'devis' }> devis</option>
+  <option value={'coaching' }>coaching</option>
+  <option value={'forfait' }>forfait</option>
+</Form.Select>
+         
          </Form.Group>
        
             <Form.Control onClick={()=> Envoyervotredemande()} type="text" className="btn btn-primary" defaultValue="Envoyer votre demande" />
