@@ -758,11 +758,10 @@ display:flex;
 /* carossel bloc img */
       .carousel.slide{height:800px; width:1200px;}
       .carousel-inner{height:800px; width:1200px;}
-      .carousel-item{height:800px; width:1200px;}
 
 
 .carousel {
-  width: 1200px;
+  width: 100%!important;
   display:flex;
   align-items: center;
   background-color:black;

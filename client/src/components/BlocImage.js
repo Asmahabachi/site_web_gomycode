@@ -9,6 +9,8 @@ import img12 from './img/img12.jpg'
 
 function BlocImage() {
   return (
+
+    
     <div class="cards-list">
      <div class="card 1">
          <div class="card_image"> <img src={img3} /> </div>

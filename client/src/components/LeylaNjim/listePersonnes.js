@@ -32,10 +32,10 @@ const pers = useSelector((state) => state.UserReducer.afficheCours)
     <ListGroupItem>{el.superficie}</ListGroupItem>
     <ListGroupItem>{el.motif}</ListGroupItem>
   </ListGroup>
-  <Card.Body>
+  {/* <Card.Body>
     <Card.Link href="#">Card Link</Card.Link>
     <Card.Link href="#">Another Link</Card.Link>
-  </Card.Body>
+  </Card.Body> */}
 </Card>
 
 </div>

@@ -65,7 +65,10 @@ export const currentUser = (token,history) => async (dispatch) => {
              payload: user.data
          })
         localStorage.setItem('current_user', JSON.stringify(user.data));
-         history.push('/Profile ')
+         history.push('/ ')
+         setTimeout(() => {
+             window.location.reload();
+         }, 800);
      } catch (error) {
         console.log(error)   
      }
