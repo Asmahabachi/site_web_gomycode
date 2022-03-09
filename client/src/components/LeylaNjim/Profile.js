@@ -3,14 +3,14 @@ import {useSelector} from 'react-redux'
 
 
 
-function LeylaNjim() {
+function Profile() {
   const currentUser = useSelector(state => state.UserReducer.currentUser)
 
   return (
     <div>
-      {currentUser.role != 'admin' ? 'this is a guest' : 'this is admin'}
+      {currentUser.role != 'admin' ? 'this is a guest' : 'this is an admin'}
     </div>
   )
 }
 
-export default LeylaNjim
+export default Profile

@@ -1,28 +1,37 @@
 import React from 'react'
+import img11 from './img/img11.jpg'
 
 function card() {
   return (
-    <div class ="container">
-    <div class ="circle"></div>
-    <h1>Nos architectes d’intérieur à Sousse aménagent vos espaces</h1>
-           <p>Afin de mettre en valeur vos intérieurs, ils doivent être décoré à vos goûts. 
-            Notre boîte imagine pour vous des aménagements modernes,
-            qui permettent d’harmoniser l’ensemble de votre espace intérieur.
-            Nous vous proposons une étude de projet personnalisée pour satisfaire tous vos besoins.
 
-            Pour vos travaux d’agencement intérieur à Sousse et ses environs, 
-            vous pouvez solliciter les services de notre cabinet d’architecture intérieure LeylaNjim. 
-            Nous nous mettons à la disposition des particuliers pour la réalisation de leur décoration.
-
-           Et pour vous aider à mieux vous projeter, nous concevons un plan aménagé, 
-           des images de synthèse 3D et des planches techniques détaillé. 
-           Par ailleurs, vous pouvez contacter notre boîte pour bénéficier d’un des services 
-           de nos architectes d'intérieur en visite avant l’achat du bien immobilier à Sousse. 
-           Notre boîte vous propose des aménagements sur mesure pour vos habitations, 
-           espaces commerciaux ou bureautiques ou tout autre espace intérieur. 
-           Nous assurons aussi un coaching personnalisé pour vous accompagner dans l auto décoration de vos espaces.</p>
+    <div id="bloc-02" class="section" >
+    <div class="textetimage" >
+        <div class="flex-row m-align-items-stretch">
+            <div class ="textBloc">
+                <h2>Nos architectes d’intérieur à SOUSSE aménagent vos espaces</h2>
+<p>Afin de mettre en valeur votre maison. <strong>Nos architectes d'intérieur</strong> imaginent pour vous des aménagements modernes, qui permettent d’harmoniser l’ensemble de votre habitation. Nous vous proposons une étude de projet personnalisée pour satisfaire tous vos besoins.</p>
+<p>Pour vos travaux d’agencement intérieur sur <strong>Sousse, Tunisie</strong> et ses environs, vous pouvez solliciter les services de notre cabinet d’architecture intérieure <strong>LEYLA_NJIM</strong>. Nous nous mettons à la disposition des particuliers pour la réalisation de leur <strong>décoration</strong>.</p>
+<p>Et pour vous aider à mieux vous projeter, nous concevons un plan 3D détaillé. Faites appel à nos <strong>architectes d’intérieur</strong> pour moderniser votre maison à <strong>SOUSSE, TUNIS</strong> et leurs environs.</p>            
+</div>
+            <div class="col-imgs12 m6" >
+                <div class="image-wrapper m-fit-content">
+                    <img src={img11} width="960" height="640" alt="déco salon" class="responsive-img" style={{width:'778px', height:'440px'}}/>
+                </div>
+            </div>
+        </div>
     </div>
-  )
+</div>
+
+
+
+
+
+
+  ) 
 }
 
 export default card 
+
+
+ 
+    

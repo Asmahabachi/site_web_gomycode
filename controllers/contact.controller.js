@@ -31,22 +31,24 @@ exports.authSignUp = async (req, res) => {
 
 exports.authSignIn = async(req, res) => {
     const {password,email} = req.body
+    
     try {
 
         
-        const userExit = await contactShcema.find({email: email})
-       
+        const userExit = await contactShcema.findOne({email: email})
+        
         if(!userExit){
             res.status(400).send({msg: "bad credentials"})
         }
+        
         const passwordCorrect = bcrypt.compareSync(password, userExit.password)
-       
+        
         if(!passwordCorrect){
             res.status(400).send({msg: "bad credentials"})
         }
-        const userId = {id: userExit._id}
+        
+        const userId = {id: userExit._id} 
         var token = jwt.sign(userId, process.env.PASSWORD_TOKEN);
-
         res.status(200).send({msg: `user ${userExit._id} is logged`,token})
 
     } catch (error) {

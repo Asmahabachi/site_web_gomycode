@@ -1,4 +1,4 @@
-import {SINGIN,SINGUP,GET_USER, CURRENT} from '../actionTypes/action-type'
+import {SINGIN,SINGUP,GET_USER, CURRENT,ADD_COUR,AFFICHE_COUR,REMOVE_COUR} from '../actionTypes/action-type'
 
 
 
@@ -7,6 +7,9 @@ const initialState = {
      signin:{},
      signup:{},
      currentUser: {},
+     addNewCours:{},
+     afficheCours:[],
+     deleteCours:{},
 
 }
 
@@ -38,6 +41,27 @@ const UserReducer =(state=initialState,action )=> {
         return{
             ...state,
             currentUser: action.payload
+        }
+        
+
+        case ADD_COUR: 
+        return{
+            ...state,
+            addNewCours : action.payload
+        }
+       
+
+        case AFFICHE_COUR: 
+        return{
+            ...state,
+            afficheCours: action.payload
+        }
+        
+
+        case REMOVE_COUR: 
+        return{
+            ...state,
+            deleteCours: action.payload
         }
         default:return state
     }

@@ -13,6 +13,7 @@ const contactSchema = new mongoose.Schema(
       postal :{type:Number},
       telephone :{type:Number},
       ville : {type:String}, 
+      role : {type:String, default:'guest'}
 
     }
 )

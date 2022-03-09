@@ -3,21 +3,26 @@
 
 /* Navbar css */
 .navbackground{
-  background: #6758f0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
+ background-color: white;}
 
 .nav-title{
   font-size:medium;
+  color: #FFFF;
 }
 .nav-text{
   font-size:small;
   display: flex;
+  color: #fff;
+}
+
+.me-auto{
+  color: #fff;
 }
 .nav-div-text{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  color: #fff;
 }
 .logoarch{
   border-radius: 100px;
@@ -25,6 +30,7 @@ background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, F
 .navbar-brand{
   display: flex;
 flex-direction: row;
+
  
 }
 
@@ -34,14 +40,17 @@ flex-direction: row;
 .me-auto{
   display: flex;
 }
+.navbar-light .navbar-nav .nav-link {
+  
+  color: #fff;
+}
 /* card css */
 .cards-list {
-  z-index: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 5% 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: #fff;
+    padding: 4rem;
 }
 
 .card {
@@ -49,7 +58,7 @@ flex-direction: row;
   width: 517px;
   height: 329px;
   border-radius: 40px;
-box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
   cursor: pointer;
   transition: 0.4s;
 }
@@ -110,18 +119,14 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 
 /* Contacts-Mobile */
 .fold {
-   position: relative; 
-  right: -5px;
-  /* background: #646383; */
-  padding: 30px; 
-  width: 530px; 
-  top: -45px;
-  /* position: relative; */
-  /* right: -871px; */
-    /* background: #646383; */
-    /* padding: -21px; */
-    /* width: 743px; */
-    /* top: -180px; */ 
+   
+    background: #f9f6f6;
+    bottom: 100px;
+    width: 1684px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    top: 16px;
   
 }
 .fold a {
@@ -164,7 +169,17 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   width: 60%;
   margin-left: 9%;
   text-align: left;
+  margin: 2rem; 
+  background-color: #f4f4f4;
+  padding: 1rem;
+
 }
+.section-1{
+  background-color:#f4f4f4;
+  padding: 1rem;
+}
+  
+
 .col1 p{
   margin-top: 3rem;
 }
@@ -188,15 +203,21 @@ i.fa.fa-chevron-circle-right {
 .flex-row{
   display: flex;
   margin: 3rem;
-  padding: 3rem;
+  /* padding: 3rem; */
   font-weight: bold;
-
+  
 }
+
+
 .flex-row p{
   margin: 1rem;
-  
 
 }
+.icon{
+  background-color: black;
+  color: white;
+}
+
 .flex-row .col .title-2.p{
   display: flex;
   flex-direction: column;
@@ -207,11 +228,11 @@ i.fa.fa-chevron-circle-right {
 }
 .col{
   display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
     align-items: center;
     align-content: center;
-    flex-direction: column;
+    flex-direction: row-reverse; 
 }
 .col-paragh{
   display: flex;
@@ -237,29 +258,28 @@ i.fa.fa-chevron-circle-right {
   width: 50%;
   height: 50%;
 }
-/* .blockimage{
-
-  border-radius: 40px;
+.blockimage{
+  background-color: black;
+  color: #fff;
 }
-.quote{font-family: 'Praise', cursive;
-font-size:x-large}
-.blockentreimages{display: flex;
-  background: #A770EF;  /* fallback for old browsers */
-/* background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
-/* background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
-justify-content: space-between;
-align-items: center;
-padding:1rem; */
+/* .top-section{
+  background-color: black;
+  color: #fff;
 
-/* }  */ 
+} */
+
+ 
+
+
 
 .story-1 {
-  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Ftn.linkedin.com%2Fin%2Fleyla-njim-a42151205&psig=AOvVaw2ohw5Wex4z330FykzyXmtU&ust=1646133043170000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKCa3M6hovYCFQAAAAAdAAAAABAD");
+  background-color:black;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 90px;
   padding-bottom: 90px;
+  color: white;
 }
 section {
   position: relative;
@@ -368,8 +388,8 @@ body, button, input, select, optgroup, textarea {
 .site-footer {
   padding-top: 100px;
   padding-bottom: 100px;background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */background-color: #1A1A1A;
-  color: #0a0000;
+  background: black;
+  color: #fff;
 }
 .widget-footer ul {
   margin: 0;
@@ -671,4 +691,80 @@ img{
 
 a{
   text-decoration: none;
+}
+
+profilimg{ 
+  border-radius: 100;
+  }
+
+
+
+
+  /* singnUp css  */
+  
+
+
+
+  .profilimg{
+    border-radius:100px
+  }
+
+
+  .story-author{
+display:flex;
+  }
+
+
+  .story-content{
+    margin-top: 50px ;
+    margin-left: 20px;
+
+  }
+
+
+  .story-text{
+    font-size: larger ;
+    font-size: 25px ;
+    font-weight: bold ;
+  }
+
+
+
+.font-color{
+  color: white !important;
+}
+
+/* carossel bloc img */
+
+.carousel {
+  width: 1680px;
+}
+
+/* textBloc */
+.textBloc {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.textBloc h2{
+  margin: 2rem;
+}
+
+.textetimage{
+  background-color: #F4F4F4;
+}
+
+.NosRealisations{
+  background-color:black;
+  
+}
+
+
+/* @media (min-width: 1200px) */
+.h1, h1 {
+    font-size: 3.5rem;
+    margin: 0rem;
+    background-color: #f9f6f6;
+    padding: 2rem;
 }

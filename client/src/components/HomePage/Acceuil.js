@@ -1,7 +1,8 @@
 import React from 'react'
 import TopSection from './TopSection'
-import MiddleSection from './MiddleSection'
+// import MiddleSection from './MiddleSection'
 // import LowerSection from './LowerSection'
+import NosRealisations from '../NosRealisations'
 
 
 function Acceuil() {
@@ -11,8 +12,9 @@ function Acceuil() {
        {/* <HomePage />  */}
       <TopSection/> 
        {/* <Mobile/>  */}
-       <MiddleSection />
+       {/* <MiddleSection /> */}
        {/* <LowerSection/>  */}
+       <NosRealisations/>
     </div>
   )
 }

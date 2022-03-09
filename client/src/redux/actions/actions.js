@@ -1,5 +1,6 @@
-import {SINGIN,SINGUP,GET_USER,CURRENT} from '../actionTypes/action-type'
+import {SINGIN,SINGUP,GET_USER,CURRENT,ADD_COUR,AFFICHE_COUR,REMOVE_COUR,ADDDEVIS,AFFICHEDEVIS} from '../actionTypes/action-type'
 import axios from 'axios'
+// import {useHistory} from 'react-router-dom'
 
 
 
@@ -9,6 +10,7 @@ export const singnIN = (userData,history) => async (dispatch) =>{
         
        try {
            const userwhosingin = await axios.post('http://localhost:5000/signin',userData);
+          
            dispatch({
                type:SINGIN,
                payload: userwhosingin.data
@@ -60,8 +62,68 @@ export const currentUser = (token,history) => async (dispatch) => {
              payload: user.data
          })
         localStorage.setItem('current_user', JSON.stringify(user.data));
-         history.push('/LeylaNjim')
+         history.push('/Profile ')
      } catch (error) {
         console.log(error)   
      }
+}
+
+export const Add_Cour = (data) => async (dispatch) =>{
+    try {
+        const addedcour = await axios.post('http://localhost:5000/addNewCours',data);
+        dispatch({
+            type:ADD_COUR,
+            payload: addedcour.data 
+        })
+    } catch (error) {
+        console.log(error)
+    }
+
+}
+export const Affiche_Cour = () => async (dispatch) =>{
+    try {
+        const affichecour = await axios.get('http://localhost:5000/afficheCours');
+        dispatch({
+            type:AFFICHE_COUR,
+            payload: affichecour.data.Affichage
+        })
+    } catch (error) {
+        console.log(error)
+    }
+
+}
+export const deleteCours = (ID) => async (dispatch) =>{
+    try {
+        const deleteCours = await axios.delete(`http://localhost:5000/cours/${ID}`);
+        dispatch({
+            type:REMOVE_COUR,
+            payload: deleteCours.data.Affichage 
+        })
+    } catch (error) {
+        console.log(error)
+    }
+
+
+}
+export const addDevis = (data) => async (dispatch) =>{
+    try {
+        const addDevis = await axios.post('http://localhost:5000/addDevis',data);
+        dispatch({
+            type:ADDDEVIS,
+            payload: addDevis.data 
+        })
+    } catch (error) {
+        console.log(error)
+    }
+}
+export const afficheDevis = () => async (dispatch) =>{
+    try {
+        const afficheDevis = await axios.get('http://localhost:5000/afficheDevis');
+        dispatch({
+            type:AFFICHEDEVIS,
+            payload: afficheDevis.data.Persons 
+        })
+    } catch (error) {
+        console.log(error)
+    }
 }
