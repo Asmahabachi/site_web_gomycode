@@ -756,8 +756,8 @@ display:flex;
 }
 
 /* carossel bloc img */
-      .carousel.slide{height:800px; width:1200px;}
-      .carousel-inner{height:800px; width:1200px;}
+      /* .carousel.slide{height:800px; width:1200px;}
+      .carousel-inner{height:800px; width:1200px;} */
 
 
 .carousel {
